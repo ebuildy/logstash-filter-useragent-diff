@@ -18,6 +18,7 @@ Logstash output to output.json file, then I use Apache Drill to do SQL queries a
 | [/sample.json](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/sample.json) | user agents sample (input) |
 | [/output1.json](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/output1.json) | output v2.0.8 |
 | [/output2.json](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/output2.json) | output v2.1.0 |
+| [/results_name_os.md](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/results_name_os.md) | Results OS names |
 | [/name_diff.md](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/name_diff.md) | browser name differences |
 | [/os_diff.md](https://github.com/ebuildy/logstash-filter-useragent-diff/blob/master/os_diff.md) | OS differences |
 | []() | |
