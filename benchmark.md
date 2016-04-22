@@ -58,7 +58,10 @@ SELECT (CAST(MAX(t.t) AS BIGINT) - CAST(MIN(t.t) AS BIGINT)) / 1000  FROM dfs.ro
 
 ## Results
 
-| Version | Run | Duration | CPU | Memory |
-| ------- | --- | -------- | --- | ------ |
-| 2.0.8   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 134 s | 190% | 290 MB |
-| 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 33 s | 140% | 320 MB |
+| Logstash Version | Plugin version | Run | Duration | CPU | Memory |
+| ------- | ------- | ------------- | -------- | --- | ------ |
+| 2.3.0 | 2.0.8   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 134 s | 190% | 290 MB |
+| 2.3.0 | 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 33 s | 140% | 320 MB |
+| 2.2.0 | 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 36 s | 120% | 320 MB |
+
+[Performance](http://b3.ms/6x1nzaXrADQG)
