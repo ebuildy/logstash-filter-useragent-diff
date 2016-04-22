@@ -64,4 +64,4 @@ SELECT (CAST(MAX(t.t) AS BIGINT) - CAST(MIN(t.t) AS BIGINT)) / 1000  FROM dfs.ro
 | 2.3.0 | 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 33 s | 140% | 320 MB |
 | 2.2.0 | 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 36 s | 120% | 320 MB |
 
-[Performance](http://b3.ms/6x1nzaXrADQG)
+![Performance](http://b3.ms/6x1nzaXrADQG)
