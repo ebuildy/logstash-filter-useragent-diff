@@ -50,10 +50,15 @@ output
 
 Logstash is run: ``logstash agent -w 2 -b 20 -f /opt/logstash.conf``
 
-## Benchmark1: v3.0.0
+Query:
 
-=> 42 secondes
+```sql
+SELECT (CAST(MAX(t.t) AS BIGINT) - CAST(MIN(t.t) AS BIGINT)) / 1000  FROM dfs.root.`bench1.json` t
+```
 
-## Benchmark2: v2.0.8
+## Results
 
-=> 257.953 secondes
+| Version | Run | Duration | CPU | Memory |
+| ------- | --- | -------- | --- | ------ |
+| 2.0.8   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 134 s | 190% | 290 MB |
+| 3.0.0   | logstash agent -w 2 -b 20 -f /opt/logstash.conf | 33 s | 140% | 320 MB |
